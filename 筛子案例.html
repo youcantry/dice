@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筛子案例</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 3px 3px 3px 0px #999999;
+            display: flex;
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: gold;
+            box-shadow: 1px 1px 2px 0px blue;
+        }
+        .one{ justify-content: center;
+              align-items: center;}
+        .two{ align-items: center;
+              justify-content: space-around;}
+              .three{ justify-content: space-around;
+              align-items: center;
+                     }
+           .three div:first-child{
+               align-self: flex-start;
+           }          
+           .three div:last-child{
+               align-self: flex-end;
+           }
+          
+           .four div{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+           }
+           .five{
+            flex-direction: column;
+            justify-content: space-around;
+           }
+           .five div{
+               display: flex;
+               justify-content: space-around;
+           }
+         .six{
+             align-items:center ;
+             justify-content: space-around;
+         }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+     <div class="container one">
+         <div class="item"></div>
+        </div>
+
+         <div class="container two">
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <div class="container three">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+        <div class="container four">
+            <div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+
+        <div class="container five">
+            <div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div><div class="item"></div></div>
+        <div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        </div>
+
+        <div class="container six">
+            <div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
